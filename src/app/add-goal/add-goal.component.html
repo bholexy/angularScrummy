@@ -1,0 +1,15 @@
+      <div style="background-color: lightgreen; padding: 35px; text-align: center; margin: 0">
+      <h2 style="color: blue">Add Goal</h2> 
+      
+      <textarea [(ngModel)]= "input.goals" style="text-align: center; width: 350px"  placeholder="Enter goal here"></textarea><br/> 
+      <select [(ngModel)]= "input.scrumy_status_id"  style="text-align: center; width: 250px">
+			<option *ngFor = "let statu of status"   [value]="statu.id">
+					{{statu.name}}
+			</option>
+	</select>
+      <br/>
+
+      <button (click)="addGoal()">Add Goal</button>
+      
+      </div>  
+    

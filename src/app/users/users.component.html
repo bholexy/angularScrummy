@@ -1,0 +1,13 @@
+
+<div style="background-color: lightgreen; padding: 35px; text-align: center; margin: 0">
+<h1 style="text-align: center;">New Users</h1>
+
+<input type="text"  [(ngModel)]= "register.username" placeholder="User Name" style="text-align: center; width: 250px"><br/>
+<input type="text"  [(ngModel)]= "register.email" placeholder="Email" style="text-align: center; width: 250px"><br/>
+<input type="password"  [(ngModel)]= "register.password1" placeholder="password1"  style="text-align: center; width: 250px"><br/>
+<input type="password"  [(ngModel)]= "register.password2" placeholder="password2"  style="text-align: center; width: 250px"><br/>
+
+
+<button (click)="postUser()">Post User</button> 
+<button (click)="registerUser()">Register</button> 
+</div>

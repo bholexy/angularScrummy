@@ -1,0 +1,11 @@
+<div class="container">
+	<p>Not Yet Registered?  <a href="/signup" style="background-color: blue; color: "><strong>REGISTER</strong></a></p>
+<h1 style="text-align: center;">Login Account</h1>
+
+<input type="text"  [(ngModel)]= "input.username" placeholder="Username" style="text-align: center; width: 250px"><br/>
+<input type="password"  [(ngModel)]= "input.password" placeholder="password"  style="text-align: center; width: 250px"><br/>
+
+
+<button (click)="login()">Log In</button> 
+<!-- <button *ngIf="data.loggedIn()" (click)="data.logOutUser()">Log Out</button>  -->
+</div>

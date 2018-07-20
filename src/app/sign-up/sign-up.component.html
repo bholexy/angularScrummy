@@ -1,0 +1,13 @@
+
+<div class="container">
+	<p>Already Registered?  <a href="/login" style="background-color: blue; color: "><strong>LOGIN</strong></a></p>
+<h1 style="text-align: center;">New Users</h1>
+
+<input type="text"  [(ngModel)]= "register.username" placeholder="User Name" style="text-align: center; width: 250px"><br/>
+<input type="text"  [(ngModel)]= "register.email" placeholder="Email" style="text-align: center; width: 250px"><br/>
+<input type="password"  [(ngModel)]= "register.password1" placeholder="Password"  style="text-align: center; width: 250px"><br/>
+<input type="password"  [(ngModel)]= "register.password2" placeholder="Verify Password"  style="text-align: center; width: 250px"><br/>
+
+
+<button (click)="registerUser()">Register</button> 
+</div>
